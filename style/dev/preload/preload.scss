@@ -1,0 +1,28 @@
+@keyframes hideAnimation {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.preload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $preload-bg;
+
+  &.hidden {
+    animation: hideAnimation ease-in 1s;
+    animation-fill-mode: forwards;
+  }
+}
