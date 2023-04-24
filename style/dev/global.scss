@@ -42,3 +42,12 @@ html, body {
     height: 100%;
   }
 }
+
+h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: $text-header;
+  margin: 0;
+  text-transform: uppercase;
+}
